@@ -1,24 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const enlaces = document.querySelectorAll("nav a");
-    const bloques = document.querySelectorAll("block");
-  
-    enlaces.forEach(enlace => {
-      enlace.addEventListener("click", function(event) {
-        event.preventDefault();
-  
-        const direccionamiento = document.querySelector(this.getAttribute("href"));
-        
-        bloques.forEach(bloque => {
-          bloque.style.display = "none";
-        });
-  
-        direccionamiento.style.display = "block";
-      });
-    });
- });
- 
-    
-    toggleTheme.addEventListener("click", function() {
+toggleTheme.addEventListener("click", function() {
       
     const checkform = document.getElementById("toggleTheme");
     const dark = document.getElementById("dark");
